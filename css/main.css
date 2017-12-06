@@ -1,0 +1,104 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Aileron';
+    color: #222222;
+    font-size: 1.4rem;
+
+    position: relative;
+    /* max-width: 192.0rem; */
+    margin: 0 auto;
+}
+
+*{
+    box-sizing: border-box;
+    /* border: 0.1rem solid #a2a1bf; */
+}
+
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+main{
+    margin-top: -13.5rem;
+}
+
+.container{
+    max-width: 117.0rem;
+    margin: 0 auto;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 3rem;
+}
+
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.column-direct{
+    flex-direction: column;
+}
+
+.overlay{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 1%, rgba(255,255, 255,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* background-color: #ed1f24; */
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+#hero{
+    position: relative;
+    
+    background-image: url(../images/hero_background.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 75%;
+
+    padding-top: 36.0rem;
+    padding-bottom: 28.0rem;
+}
+
+/*--------------------------
+    GENERAL STYLE
+---------------------------*/
+
+
+/*--------------------------
+    HEADER
+---------------------------*/
