@@ -16,7 +16,8 @@ body{
 
     display: grid;
     grid-template-columns: minmax(15.4rem,0.25fr) 17% auto;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 11.8rem auto;
+    
 }
 
 *{
@@ -52,6 +53,8 @@ h1, h2, h3, p, figure{
 
     background-position: center;
     background-repeat: no-repeat;
+
+    position: relative;
 }
 
 /*--------------------------
@@ -144,7 +147,6 @@ h1, h2, h3, p, figure{
 
     background-color: #191d2a;
 }
-
 
 .profile{
     text-align: center;
@@ -243,10 +245,107 @@ h1, h2, h3, p, figure{
 ---------------------------*/
 
 .top-bar{
+    background-color: #060b17;
+    box-shadow: 0px 5px 38px 0px rgba(0, 0, 0, 0.2); 
     grid-row: 1/2;
 
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(5,min-content);
+    align-items: center;
+
+}
+
+.top-bar__logo{
+    margin-left: 3.6rem;
+}
+
+.top-bar__search{
+    margin-left: 10.8rem;
+}
+
+.top-bar__date-list{
+    margin-left: 14.2rem;
+    margin-right: 3.6rem;
+}
+
+.top-bar__button{
+    margin-left: 2.8rem;
+}
+
+.search{
+    width: 50rem;
+
+    position: relative;
+    border-bottom: 0.1rem solid #4a4e5b;
+}
+
+.search__input{
+    background-color: transparent;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.search__input_type_text{
+    width: 100%;
+    padding: 1.4rem 0;
+    padding-right: 3rem;
+}
+
+.search__input_type_text::placeholder{
+    color: white;
+    font-weight: 700;
+}
+
+.search__input_type_submit{
+    position: absolute;
+    display: block;
+    bottom:1rem;
+    right: 0;
+
+    width: 3rem;
+    height: 3rem;
+
+    background-image: url(../images/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.date-list{
+    border: none;
+    background-color: transparent;
+    color: #3e4457;
+    font-size: 1.4rem;
+
+    width: 18.3rem;
+
+}
+
+.button__notify:after{
+    content: "";
+    display: block;
+    position: absolute;
+
+    height: 1rem;
+    width: 1rem;
+    border-radius: 0.5rem;
+
+    top: 0.6rem;
+    right: 0.3rem;
+
+    background-color: #96c72c;
+}
+
+.button_size_m{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.button_theme_notify{
+    background-image: url(../images/notify.png);
+}
+
+.button_theme_setting{
+    background-image: url(../images/setting.png);
 }
 
 
@@ -255,7 +354,10 @@ h1, h2, h3, p, figure{
 ---------------------------*/
 
 .content{
+    background-color: #1e2333;
     grid-row: 2/3;
+    box-shadow: 0px 5px 38px 0px rgba(0, 0, 0, 0.2); 
+    
 }
 
 .dashboard{
