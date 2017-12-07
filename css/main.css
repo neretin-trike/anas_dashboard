@@ -12,8 +12,10 @@ body{
     /* max-width: 192.0rem; */
     margin: 0 auto;
 
+    height: 100vh;
+
     display: grid;
-    grid-template-columns: minmax(15.4rem,0.25fr) 20% auto;
+    grid-template-columns: minmax(15.4rem,0.25fr) 17% auto;
     grid-template-rows: 1fr auto;
 }
 
@@ -82,13 +84,29 @@ h1, h2, h3, p, figure{
 }
 
 .sidebar__link{
+    position: relative;
     display: block;
     height: 5.8rem;
 
     margin-bottom: 1.6rem;
     
-    background-position: center;
+    background-position: 35% center;
     background-repeat: no-repeat;
+}
+
+.sidebar__link_notify:after{
+    content: "";
+    display: block;
+    position: absolute;
+
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 0.7rem;
+
+    bottom: 1.2rem;
+    right: 2.4rem;
+
+    background-color: #f7658e;
 }
 
 .sidebar__link_theme_dashboard{
@@ -117,14 +135,107 @@ h1, h2, h3, p, figure{
     border-bottom-left-radius: 2.9rem;
 }
 
-
-
 /*--------------------------
     SUBMENU
 ---------------------------*/
 
 .submenu{
     grid-row: 1/3;
+
+    background-color: #191d2a;
+}
+
+
+.profile{
+    text-align: center;
+    border-bottom: 0.1rem solid #3e414c;
+}
+
+.profile__photo{
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+
+    overflow: hidden;
+    height: 10rem;
+    width: 10rem;
+
+    border-radius: 5rem;
+}
+
+.profile__img{
+    position: relative;
+    top: -50%;
+    lefT: -100%;
+}    
+
+.profile__name{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.profile__location{
+    color: #5b6173;
+    padding-bottom: 2.8rem;
+}
+
+.menu{
+    margin: 5rem;
+}
+
+.menu__header{
+    color: white;
+    font-size: 2.1rem;
+}
+
+.menu__list{
+    list-style-type: none;
+    padding-left: 1.2rem;
+}
+
+.menu__item{
+    line-height: 4rem;
+    margin: 1.6rem 0;
+}
+
+.menu__link{
+    display: block;
+    position: relative;
+
+    padding-left: 1.2rem;
+    
+    font-size: 1.8rem;
+    color: #9499ac;
+}
+
+.menu__notify{
+    width: 4.5rem;
+    height: 2.4rem;
+    background-color: #7b4fc1;
+    line-height: 2.5rem;
+    border-radius: 3rem;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.menu__count{
+    position: absolute;
+    right: 2rem;
+
+    text-align: left;
+}
+
+.menu__link_active{
+    border-radius: 0.5rem;
+    background-color: #060b17;
 }
 
 /*--------------------------
@@ -137,6 +248,7 @@ h1, h2, h3, p, figure{
     display: grid;
     grid-auto-flow: column;
 }
+
 
 /*--------------------------
     CONTENT
