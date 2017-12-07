@@ -16,45 +16,6 @@ body{
     grid-template-rows: 1fr auto;
 }
 
-.sidebar{
-    grid-row: 1/3;
-}
-
-.submenu{
-    grid-row: 1/3;
-}
-
-.top-bar{
-    grid-row: 1/2;
-
-    display: grid;
-    grid-auto-flow: column;
-}
-
-.content{
-    grid-row: 2/3;
-}
-
-.dashboard{
-    display: grid;
-    grid-gap: 2.4rem;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,auto);
-}
-
-.dash-item_col-span-2{
-    grid-column: span 2;
-}
-
-.dash-item_col-span-3{
-    grid-column: span 3;
-}
-
-.dash-item_row-span-2{
-    grid-row: span 2;
-}
-
-
 *{
     box-sizing: border-box;
     border: 0.1rem solid #a2a1bf;
@@ -75,7 +36,6 @@ input{
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 h1, h2, h3, p, figure{
@@ -83,35 +43,108 @@ h1, h2, h3, p, figure{
     margin: 0;
 }
 
+/*--------------------------
+    SIDEBAR
+---------------------------*/
+
+.sidebar{
+    grid-row: 1/3;
+}
+
+.sidebar__link{
+    display: block;
+}
+
+/*--------------------------
+    SUBMENU
+---------------------------*/
+
+.submenu{
+    grid-row: 1/3;
+}
+
+/*--------------------------
+    TOP BAR
+---------------------------*/
+
+.top-bar{
+    grid-row: 1/2;
+
+    display: grid;
+    grid-auto-flow: column;
+}
+
+/*--------------------------
+    CONTENT
+---------------------------*/
+
+.content{
+    grid-row: 2/3;
+}
+
+.dashboard{
+    display: grid;
+    grid-gap: 2.4rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,auto);
+
+}
+
+.dash-item_col-span-2{
+    grid-column: span 2;
+}
+
+.dash-item_col-span-3{
+    grid-column: span 3;
+}
+
+.dash-item_row-span-2{
+    grid-row: span 2;
+}
+
+.dash-item__header{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.dash-item__info{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.dash-item__legend{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.mail__sender{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+.review{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.review__info{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.review__message{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+
 
 
 /*--------------------------
     GENERAL STYLE
 ---------------------------*/
-
-
-/*--------------------------
-    HEADER
----------------------------*/
-
-.container{
-    max-width: 117.0rem;
-    margin: 0 auto;
-    position: relative;
-
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-gap: 3rem;
-}
-
-.row{
-    display: flex;
-    /* flex-wrap: wrap; */
-}
-
-.column-direct{
-    flex-direction: column;
-}
 
 .overlay{
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 1%, rgba(255,255, 255,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
