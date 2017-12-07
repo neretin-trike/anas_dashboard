@@ -39,18 +39,18 @@ body{
     display: grid;
     grid-gap: 2.4rem;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(5,auto);
 }
 
-.dashboard__item_col-span-2{
+.dash-item_col-span-2{
     grid-column: span 2;
 }
 
-.dashboard__item_col-span-3{
+.dash-item_col-span-3{
     grid-column: span 3;
 }
 
-.dashboard__item_row-span-2{
+.dash-item_row-span-2{
     grid-row: span 2;
 }
 

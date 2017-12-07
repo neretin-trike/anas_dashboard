@@ -25,9 +25,9 @@
     </aside>
     <aside class="submenu">
         <section class="profile">
-            <img class="profile__img" src="" alt="">
+            <figure class="profile__photo"><img class="profile__img" src="" alt=""></figure> 
             <div class="profile__info">
-                <h3 class="profile__nickname">Ansar</h3>
+                <h3 class="profile__name">Ansar</h3>
                 <p class="profile__location">Jiddah, SA</p>
             </div>
         </section>
@@ -53,23 +53,142 @@
         <select class="date-list">
             <option class="date-list__item" value="10/02/2016-11/02/2017">10/02/2016    11/02/2017</option>
         </select>
-        <button class="button button_theme_notify">noti</button>
-        <button class="button button_theme_setting">setti</button>
+        <button class="button button_theme_notify button_size_m">noti</button>
+        <button class="button button_theme_setting button_size_m">setti</button>
     </header>
     <main class="content">
         <section class="dashboard">
-            <div class="dashboard__item dashboard__item_pos_1-1">New User</div>
-            <div class="dashboard__item dashboard__item_pos_1-2">Achieved Goals</div>
-            <div class="dashboard__item dashboard__item_pos_1-3">Project Revenue</div>
-            <div class="dashboard__item dashboard__item_pos_1-4">Inbox</div>
-            <div class="dashboard__item dashboard__item_pos_2-1 dashboard__item_col-span-3 dashboard__item_row-span-2">Weekly Report</div>
-            <div class="dashboard__item dashboard__item_pos_2-4">Product Sold</div>
-            <div class="dashboard__item dashboard__item_pos_3-4">Refferals</div>
-            <div class="dashboard__item dashboard__item_pos_4-1 dashboard__item_col-span-2">Statistic</div>
-            <div class="dashboard__item dashboard__item_pos_4-3 dashboard__item_col-span-2">Unique Visitors</div>
-            <div class="dashboard__item dashboard__item_pos_5-1">Video</div>
-            <div class="dashboard__item dashboard__item_pos_5-2 dashboard__item_col-span-2">Recent Review</div>
-            <div class="dashboard__item dashboard__item_pos_5-4">Gallery</div>
+            <div class="dash-item dash-item_theme_new-user">
+                <header class="dash-item__header">
+                    <h3 class="dash-item__caption">New User</h3>
+                    <button class="button button_theme_refresh"></button>
+                </header>
+                <div class="dash-item__chart"><img class="dash-item__img" src="" alt=""></div>
+                <div class="dash-item__legend">
+                    <span class="dash-item__leg-text dash-item__leg-text_theme_male">Male</span>
+                    <span class="dash-item__leg-text dash-item__leg-text_theme_woman">Male</span>
+                </div>
+            </div>
+            <div class="dash-item dash-item_theme_achieved-goals">
+                <header class="dash-item__header">
+                    <h3 class="dash-item__caption">Achieved Goals</h3>
+                    <button class="button button_theme_refresh"></button>
+                </header>
+                <div class="dash-item__chart"><img class="dash-item__img" src="" alt=""></div>
+                <div class="dash-item__legend">
+                    <span class="dash-item__leg-text dash-item__leg-text_theme_today">Today</span>
+                    <span class="dash-item__leg-text dash-item__leg-text_theme_week">Week</span>
+                    <span class="dash-item__leg-text dash-item__leg-text_theme_month">Month</span>
+                </div>
+            </div>
+            <div class="dash-item dash-item_theme_project-revenue">
+                <header class="dash-item__header">
+                    <h3 class="dash-item__caption">Project Revenue</h3>
+                    <button class="button button_theme_refresh"></button>
+                </header>
+                <div class="dash-item__chart"><img class="dash-item__img" src="" alt=""></div>
+            </div>
+            <div class="dash-item dash-item_theme_inbox">
+                <header class="dash-item__header">
+                    <h3 class="dash-item__caption">Inbox <span class="dash-item__tag">Important</span></h3>
+                    <button class="button button_theme_refresh"></button>
+                </header>
+                <div class="mail">
+                    <section class="mail__sender">
+                        <figure class="mail__photo"><img class="mail__img" src="" alt=""></figure> 
+                        <div class="mail__info">
+                            <h4 class="mail__name">Backy Billah</h4>
+                            <p class="mail__subtitle">Sub: Hello!</p>
+                        </div>
+                    </section>
+                    <p class="mail__message">
+                        Hello <br>
+                        I Have got idea, Today i'm busy. Let's meet tommorow afternoon.
+                    </p>
+                    <button class="button button_theme_outline">Replay</button>
+                </div>
+            </div>
+            <div class="dash-item dash-item_theme_achieved-goals dash-item_col-span-3 dash-item_row-span-2">
+                <header class="dash-item__header">
+                    <h3 class="dash-item__caption">Weekly Report</h3>
+                    <div class="dash-item__filter">
+                        Show <button class="button button_theme_filter">Week</button>
+                    </div>
+                </header>
+                <div class="dash-item__chart"><img class="dash-item__img" src="" alt=""></div>
+            </div>
+            <div class="dash-item dash-item_theme_product-sold">
+                <header class="dash-item__header">
+                    <div class="dash-item__info">
+                        <p class="dash-item__count">3510 ▲</p>
+                        <h3 class="dash-item__caption">Product Sold</h3>
+                    </div>
+                    <button class="button button_theme_refresh"></button>
+                </header>
+                <div class="dash-item__chart"><img class="dash-item__img" src="" alt=""></div>
+            </div>
+            <div class="dash-item dash-item_theme_product-sold">
+                <header class="dash-item__header">
+                    <div class="dash-item__info">
+                        <p class="dash-item__count">32.1%</p>
+                        <h3 class="dash-item__caption">Refferals</h3>
+                    </div>
+                    <button class="button button_theme_refresh"></button>
+                </header>
+                <div class="dash-item__chart"><img class="dash-item__img" src="" alt=""></div>
+            </div>
+            <div class="dash-item dash-item_theme_statistic dash-item_col-span-2">
+                <header class="dash-item__header">
+                    <h3 class="dash-item__caption">Statistic</h3>
+                </header>
+                <div class="dash-item__chart"><img class="dash-item__img" src="" alt=""></div>
+            </div>
+            <div class="dash-item dash-item_theme_unique-visitors dash-item_col-span-2">
+                <header class="dash-item__header">
+                    <h3 class="dash-item__caption">Unique Visitors</h3>
+                </header>
+                <div class="dash-item__chart"><img class="dash-item__img" src="" alt=""></div>
+            </div>
+            <div class="dash-item dash-item_theme_video">
+                <div class="dash-item__video">
+                    <button class="button button_theme_play"></button>
+                </div>
+            </div>
+            <div class="dash-item dash-item_theme_achieved-goals dash-item_col-span-2">
+                <header class="dash-item__header">
+                    <h3 class="dash-item__caption">Recent Review</h3>
+                    <div class="dash-item__general-rating">
+                        <strong>50</strong> Reviews 
+                        <div class="dash-item__stars">
+                            <img class="dash-item__img" src="" alt="">
+                            <img class="dash-item__img" src="" alt="">
+                            <img class="dash-item__img" src="" alt="">
+                            <img class="dash-item__img" src="" alt="">
+                            <img class="dash-item__img" src="" alt="">
+                        </div>
+                    </div>
+                </header>
+                <section class="review">
+                    <figure class="review_photo"><img class="mail__img" src="" alt=""></figure> 
+                    <div class="review_info">
+                        <h4 class="review__name">King Soud</h4>
+                        <div class="review__stars">
+                            <img class="dash-item__img" src="" alt="">
+                            <img class="dash-item__img" src="" alt="">
+                            <img class="dash-item__img" src="" alt="">
+                            <img class="dash-item__img" src="" alt="">
+                            <img class="dash-item__img" src="" alt="">
+                        </div>
+                    </div>
+                    <p class="review__message">In the 19th century, the Ottoman Navy frigate Ertuğrul was named in this honor. The Ertuğrul Gazi Mosque in Ashgabat, Turkmenistan is also named in</p>
+                </section>
+            </div>
+            <div class="dash-item dash-item_theme_gallery">
+                <div class="dash-item__gallery">
+                    <button class="button button_theme_left"></button>
+                    <button class="button button_theme_right"></button>
+                </div>
+            </div>
         </section>
     </main>
 </body>
