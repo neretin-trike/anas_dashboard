@@ -250,30 +250,35 @@ h1, h2, h3, p, figure{
     grid-row: 1/2;
 
     display: grid;
-    grid-template-columns: repeat(5,min-content);
+    grid-template-columns: 14.749% 45.133% 18.879% 4.277% 4.277% auto;
+    /* repeat(5,min-content); */
     align-items: center;
 
 }
 
 .top-bar__logo{
-    margin-left: 3.6rem;
+    margin: auto;
+    /* margin-left: 3.6rem; */
 }
 
 .top-bar__search{
-    margin-left: 10.8rem;
+    margin: auto;
+    /* margin-left: 10.8rem; */
 }
 
 .top-bar__date-list{
-    margin-left: 14.2rem;
-    margin-right: 3.6rem;
+    margin: auto;
+    /* margin-left: 14.2rem;
+    margin-right: 3.6rem; */
 }
 
 .top-bar__button{
-    margin-left: 2.8rem;
+    margin-left: auto;
 }
 
 .search{
-    width: 50rem;
+    width: 75%;
+    /* width: 50rem; */
 
     position: relative;
     border-bottom: 0.1rem solid #4a4e5b;
@@ -316,7 +321,9 @@ h1, h2, h3, p, figure{
     color: #3e4457;
     font-size: 1.4rem;
 
-    width: 18.3rem;
+    width: 75%;
+
+    /* width: 18.3rem; */
 
 }
 
