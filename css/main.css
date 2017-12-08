@@ -497,7 +497,19 @@ h1, h2, h3, h4, p, figure{
     padding-right: 1.6rem;
     padding-bottom: 1rem;
 
-    background-image: linear-gradient(144deg,#dde3f7 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-image: linear-gradient(144deg,#ffffff 0%,#dde3f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.dash-item_theme_statistic{
+    padding: 2rem 4.8rem;
+
+    background-image: linear-gradient(144deg,#ffffff 0%,#dde3f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.dash-item_theme_unique-visitors{
+    padding: 2rem 4.8rem;
+    
+    background-image: linear-gradient(153deg,#1ac5fb 0%,#1d72f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .button_theme_refresh{
@@ -582,6 +594,10 @@ h1, h2, h3, h4, p, figure{
 }
 
 .dash-item__info_color_dark{
+    color: #555863;
+}
+
+.dash-item__header_color_dark{
     color: #555863;
 }
 
